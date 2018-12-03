@@ -1,0 +1,26 @@
+# /etc/conf.d/webrubled: config file for /etc/init.d/webrubled
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/webruble/webruble.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/webrubled"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/webrubled.pid"
+
+# Where to write webrubled data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/webrubled"
+
+# User and group to own webrubled process
+#BITCOIND_USER="webruble"
+#BITCOIND_GROUP="webruble"
+
+# Path to webrubled executable
+#BITCOIND_BIN="/usr/bin/webrubled"
+
+# Nice value to run webrubled under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS=""

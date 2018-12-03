@@ -1,0 +1,11 @@
+[Protocol]
+exec=webruble-qt '%u'
+protocol=webruble
+input=none
+output=none
+helper=true
+listing=
+reading=false
+writing=false
+makedir=false
+deleting=false

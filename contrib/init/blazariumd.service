@@ -1,0 +1,26 @@
+[Unit]
+Description=WBR's distributed currency daemon
+After=network.target
+
+[Service]
+User=webruble
+Group=webruble
+
+Type=forking
+PIDFile=/var/lib/webrubled/webrubled.pid
+
+ExecStart=/usr/bin/webrubled -daemon -pid=/var/lib/webrubled/webrubled.pid \
+          -conf=/etc/webruble/webruble.conf -datadir=/var/lib/webrubled
+
+ExecStop=-/usr/bin/webruble-cli -conf=/etc/webruble/webruble.conf \
+         -datadir=/var/lib/webrubled stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,20 @@
+<!DOCTYPE RCC><RCC version="1.0">
+    <qresource prefix="/translations">
+        <file alias="bg">locale/webruble_bg.qm</file>
+        <file alias="de">locale/webruble_de.qm</file>
+        <file alias="en">locale/webruble_en.qm</file>
+        <file alias="es">locale/webruble_es.qm</file>
+        <file alias="fi">locale/webruble_fi.qm</file>
+        <file alias="fr">locale/webruble_fr.qm</file>
+        <file alias="it">locale/webruble_it.qm</file>
+        <file alias="ja">locale/webruble_ja.qm</file>
+        <file alias="pl">locale/webruble_pl.qm</file>
+        <file alias="pt">locale/webruble_pt.qm</file>
+        <file alias="ru">locale/webruble_ru.qm</file>
+        <file alias="sk">locale/webruble_sk.qm</file>
+        <file alias="sv">locale/webruble_sv.qm</file>
+        <file alias="vi">locale/webruble_vi.qm</file>
+        <file alias="zh_CN">locale/webruble_zh_CN.qm</file>
+        <file alias="zh_TW">locale/webruble_zh_TW.qm</file>
+    </qresource>
+</RCC>
